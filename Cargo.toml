@@ -13,11 +13,5 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = { version = "0.29.0", features = ["experimental-inspect", "pyo3-macros"] }
 pyo3-file = "0.17.0"
-numpy = "0.29.0"
-ndarray = "0.17.2"
-# 核心库从 crates.io 拉取；本地想对着 tlg-rs 源码联调时，
-# 临时加回 path 即可：tlg_core = { package = "tlg-rs", path = "../tlg-rs", version = "1.0.0", default-features = false }
-tlg_core = { package = "tlg-rs", version = "1.0.0", default-features = false }
+tlg_core = { package = "tlg-rs", version = "1.1.0", default-features = false }
 
-# 本仓库是独立工作区，不再属于 tlg-rs 的 workspace
-[workspace]
