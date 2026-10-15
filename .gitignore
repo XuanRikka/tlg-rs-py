@@ -1,0 +1,7 @@
+/target
+/.venv
+/.idea
+/.claude
+/dist
+*.pyc
+__pycache__/
